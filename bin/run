@@ -7,9 +7,10 @@ require_relative "../config/environment.rb"
 
 song = Song.new(name: "Hello", album: "25")
 
-song= Song.new(name:"I will always love you", album: "The Bodyguard")
+song1= Song.new(name:"I will always love you", album: "The Bodyguard")
 
-Song.find_by_name()
+Song.find_by_name("I will always love you")
+puts song1.album
 
 
 
